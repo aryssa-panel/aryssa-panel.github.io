@@ -36,5 +36,8 @@ nav:
       - Commands: sections/docker/commands.md
       - Getting Started: sections/docker/start.md
   - Backend:
-      - Getting Started: sections/back/start.md
-  - How to edit documentation: sections/additional_info/documentation.md
+      - Introduction: sections/back/api-introduction.md
+      - Structure: sections/back/api-structure.md
+      - Installing: sections/back/api-install.md
+      - Requests: sections/back/api-requests.md
+  - How to edit documentation: sections/info/documentation.md
