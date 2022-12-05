@@ -31,13 +31,9 @@ markdown_extensions:
   - tables
 nav:
   - index.md
-  - Docker:
-      - Overview: sections/docker/overview.md
-      - Commands: sections/docker/commands.md
-      - Getting Started: sections/docker/start.md
   - Backend:
       - Introduction: sections/back/api-introduction.md
       - Structure: sections/back/api-structure.md
       - Installing: sections/back/api-install.md
-      - Requests: sections/back/api-requests.md
+      - Endpoints: sections/back/api-requests.md
   - How to edit documentation: sections/info/documentation.md
