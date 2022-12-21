@@ -21,19 +21,31 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+extra:
+  alternate:
+    - name: Eng
+      link: /en/
+      lang: en
+    - name: Rus
+      link: /ru/
+      lang: ru
 extra_css:
   - stylesheets/extra.css
-# markodown f.e note alert bug ...
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 nav:
   - index.md
   - Backend:
-      - Introduction: sections/back/api-introduction.md
-      - Structure: sections/back/api-structure.md
-      - Installing: sections/back/api-install.md
-      - Endpoints: sections/back/api-requests.md
+      - Endpoints: sections/back/api-endpoints.md
   - How to edit documentation: sections/info/documentation.md

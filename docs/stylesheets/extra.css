@@ -1,5 +1,51 @@
-[data-md-color-scheme="youtube"] {
-  --md-primary-fg-color: #ee0f0f;
-  --md-primary-fg-color--light: #ecb7b7;
-  --md-primary-fg-color--dark: #90030c;
+:root {
+  --md-admonition-icon--post: url('icons/POST.svg');
+  --md-admonition-icon--get: url('icons/GET.svg');
+  --md-admonition-icon--path: url('icons/PATH.svg');
+  --md-admonition-icon--update: url('icons/UPDATE.svg');
+  --md-admonition-icon--delete: url('icons/DELETE.svg');
+}
+.md-typeset .admonition.post,
+.md-typeset details.post {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .post > .admonition-title,
+.md-typeset .post > summary {
+  background-color: rgb(43, 155, 70);
+}
+.md-typeset .post > .admonition-title::before,
+.md-typeset .post > summary::before {
+  background-color: rgb(255, 255, 255);
+  -webkit-mask-image: var(--md-admonition-icon--post);
+  mask-image: var(--md-admonition-icon--post);
+}
+
+.md-typeset .admonition.get,
+.md-typeset details.get {
+  border-color: rgb(56, 110, 182);
+}
+.md-typeset .get > .admonition-title,
+.md-typeset .get > summary {
+  background-color: rgb(56, 110, 182);
+}
+.md-typeset .get > .admonition-title::before,
+.md-typeset .get > summary::before {
+  background-color: rgb(255, 255, 255);
+  -webkit-mask-image: var(--md-admonition-icon--get);
+  mask-image: var(--md-admonition-icon--get);
+}
+
+.md-typeset .admonition.path,
+.md-typeset details.path {
+  border-color: rgb(106, 238, 136);
+}
+.md-typeset .path > .admonition-title,
+.md-typeset .path > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .path > .admonition-title::before,
+.md-typeset .path > summary::before {
+  background-color: rgb(0, 255, 61);
+  -webkit-mask-image: var(--md-admonition-icon--path);
+  mask-image: var(--md-admonition-icon--path);
 }
